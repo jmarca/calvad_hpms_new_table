@@ -8,3 +8,19 @@ explicitly ask for.  That is what this table is for.
 For historical reasons, it is called hpms_2014.
 
 Requires hpms schema sqitch package is already deployed.
+
+
+# deploy
+
+```
+sqitch deploy db:pg:mydb
+```
+
+
+# testing
+
+to test, do:
+
+```
+ pg_prove -d mydb -U slash test/*
+```
