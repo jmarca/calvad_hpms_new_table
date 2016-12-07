@@ -1,0 +1,25 @@
+{
+  "name": "calvad_hpms_new_table",
+  "version": "1.0.0",
+  "description": "sqitch code to deploy hpms new table",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "pgtap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmarca/calvad_hpms_new_table.git"
+  },
+  "author": "James E. Marca",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jmarca/calvad_hpms_new_table/issues"
+  },
+  "homepage": "https://github.com/jmarca/calvad_hpms_new_table#readme",
+  "dependencies": {
+    "calvad_db_hpms_schema": "github:jmarca/calvad_db_hpms_schema"
+  }
+}
