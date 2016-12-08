@@ -6,19 +6,11 @@ BEGIN;
 
 SET search_path TO hpms,public;
 
-CREATE TABLE hpms_2014 (
-      gid serial primary key,
-      year_record smallint,
-      state_code smallint,
-      route_id character varying(120),
-      begin_point double precision,
-      end_point double precision,
-      section_length double precision,
-      aadt double precision,
-      comments character varying(100),
-      geom public.geometry(MultiLineString,4326)
-);
+ALTER TABLE hpms_2014 ADD COLUMN aadt_combination double precision;
+ALTER TABLE hpms_2014 ADD COLUMN aadt_single_unit double precision;
+ALTER TABLE hpms_2014 ADD COLUMN last_modified_by character varying(100);
+ALTER TABLE hpms_2014 ADD COLUMN last_modified_on date;
+ALTER TABLE hpms_2014 ADD COLUMN data_source smallint;
 
-CREATE INDEX hpms_2014_geom_idx ON hpms_2014 USING gist (geom);
 
 COMMIT;
