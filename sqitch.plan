@@ -3,3 +3,4 @@
 %uri=git@activimetrics.com/a/jmarca/calvad_hpms_new_table
 
 hpms_new_table [calvad_db_hpms_schema:hpms_schema] 2016-12-07T18:55:18Z James E. Marca <james@activimetrics.com> # Create table for new (post 2014) HPMS data.
+@v1.0.0 2016-12-08T18:33:49Z James E. Marca <james@activimetrics.com> # Tag v1.0.0.
