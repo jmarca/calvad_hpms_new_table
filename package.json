@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/jmarca/calvad_hpms_new_table#readme",
   "dependencies": {
+    "calvad_db_geoextensions": "github:jmarca/calvad_db_geoextensions",
     "calvad_db_hpms_schema": "github:jmarca/calvad_db_hpms_schema"
   }
 }
