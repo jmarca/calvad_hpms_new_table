@@ -5,3 +5,7 @@
 hpms_new_table [calvad_db_hpms_schema:hpms_schema] 2016-12-07T18:55:18Z James E. Marca <james@activimetrics.com> # Create table for new (post 2014) HPMS data.
 @v1.0.0 2016-12-08T18:33:49Z James E. Marca <james@activimetrics.com> # Tag v1.0.0.
 hpms_new_table [hpms_new_table@v1.0.0] 2016-12-08T18:35:38Z James E. Marca <james@activimetrics.com> # Change table to accept truck data too.
+hpms_segments [hpms_new_table@v1.0.0] 2016-12-08T22:59:07Z James E. Marca <james@activimetrics.com> # hpms_segments table
+hpms_aadt [hpms_segments] 2016-12-08T23:48:22Z James E. Marca <james@activimetrics.com> # hpms_aadt table
+hpms_aadt_combination [hpms_segments] 2016-12-08T23:48:40Z James E. Marca <james@activimetrics.com> # hpms_aadt_combination table
+hpms_aadt_single_unit [hpms_segments] 2016-12-08T23:48:56Z James E. Marca <james@activimetrics.com> # hpms_aadt_single_unit table
