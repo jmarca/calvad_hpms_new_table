@@ -2,9 +2,10 @@
 -- requires: hpms_segments
 
 BEGIN;
+SET search_path TO hpms,public;
 
 CREATE TABLE hpms_aadt_combination (
-      gid  primary key,
+      gid integer primary key references hpms_segments,
       year_record smallint,
       aadt double precision,
       comments character varying(100),
