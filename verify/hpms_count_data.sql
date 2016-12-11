@@ -3,7 +3,7 @@
 BEGIN;
 
 SET search_path TO hpms,public;
-SELECT gid, year_record, state_code, route_id, begin_point, end_point, section_length, aadt, aadt_combination,aadt_single_unit, geom
+SELECT segment_id, geom_id, year_record, state_code, route_id, begin_point, end_point, section_length, aadt, aadt_combination,aadt_single_unit, geom
 FROM hpms_count_data
 WHERE FALSE;
 

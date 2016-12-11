@@ -6,7 +6,7 @@ BEGIN;
 SET search_path TO hpms,public;
 
 CREATE TABLE hpms_aadt (
-      gid integer primary key references hpms_segments,
+      segment_id integer primary key references hpms_segments (sid),
       year_record smallint,
       aadt double precision,
       comments character varying(100),

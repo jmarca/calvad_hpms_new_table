@@ -3,6 +3,9 @@
 BEGIN;
 
 SET search_path TO hpms,public;
+
+DROP TABLE hpms_segments_join_geom;
+DROP TABLE hpms_segments_geom;
 DROP TABLE hpms_segments;
 
 COMMIT;

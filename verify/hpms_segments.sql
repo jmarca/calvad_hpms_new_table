@@ -3,8 +3,16 @@
 BEGIN;
 
 SET search_path TO hpms,public;
-SELECT gid, state_code, route_id, begin_point, end_point, section_length, geom
+SELECT sid, state_code, route_id, begin_point, end_point
 FROM hpms_segments
+WHERE FALSE;
+
+SELECT gid, geom, section_length
+FROM hpms_segments_geom
+WHERE FALSE;
+
+SELECT segment_id, geom_id, year_record
+FROM hpms_segments_join_geom
 WHERE FALSE;
 
 ROLLBACK;

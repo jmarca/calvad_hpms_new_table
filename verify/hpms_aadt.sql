@@ -3,7 +3,7 @@
 BEGIN;
 
 SET search_path TO hpms,public;
-SELECT gid, year_record, aadt, comments, last_modified_by, last_modified_on, data_source
+SELECT segment_id, year_record, aadt, comments, last_modified_by, last_modified_on, data_source
 FROM hpms_aadt
 WHERE FALSE;
 
