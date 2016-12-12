@@ -51,13 +51,13 @@ SELECT has_column(        'hpms_segments_join_geom', 'year_record' );
 SELECT col_type_is(       'hpms_segments_join_geom', 'year_record', 'smallint' );
 SELECT col_hasnt_default(   'hpms_segments_join_geom', 'year_record' );
 
-SELECT has_column(        'hpms_segments_join_geom', 'begin_point' );
-SELECT col_type_is(       'hpms_segments_join_geom', 'begin_point', 'double precision' );
-SELECT col_hasnt_default( 'hpms_segments_join_geom', 'begin_point' );
+SELECT has_column(        'hpms_segments', 'begin_point' );
+SELECT col_type_is(       'hpms_segments', 'begin_point', 'double precision' );
+SELECT col_hasnt_default( 'hpms_segments', 'begin_point' );
 
-SELECT has_column(        'hpms_segments_join_geom', 'end_point' );
-SELECT col_type_is(       'hpms_segments_join_geom', 'end_point', 'double precision' );
-SELECT col_hasnt_default( 'hpms_segments_join_geom', 'end_point' );
+SELECT has_column(        'hpms_segments', 'end_point' );
+SELECT col_type_is(       'hpms_segments', 'end_point', 'double precision' );
+SELECT col_hasnt_default( 'hpms_segments', 'end_point' );
 
 
 -- would be nice to test some inserts and stuff

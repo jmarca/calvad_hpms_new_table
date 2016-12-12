@@ -9,7 +9,9 @@ CREATE TABLE hpms_segments (
       sid serial primary key,
       state_code smallint,
       route_id character varying(120),
-      UNIQUE (route_id)
+      begin_point double precision,
+      end_point double precision,
+      UNIQUE (route_id,begin_point,end_point)
 );
 
 CREATE TABLE hpms_segments_geom (
@@ -24,8 +26,6 @@ CREATE TABLE hpms_segments_join_geom (
    segment_id integer references hpms_segments (sid),
    geom_id integer references hpms_segments_geom (gid),
    year_record smallint,
-   begin_point double precision,
-   end_point double precision,
    PRIMARY KEY (segment_id,geom_id,year_record)
    );
 
