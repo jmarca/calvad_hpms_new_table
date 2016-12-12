@@ -5,7 +5,7 @@ RESET client_min_messages;
 BEGIN;
 -- SELECT no_plan();
 
-SELECT plan(29);
+SELECT plan(31);
 
 SELECT pass('Test hpms_count_data!');
 
@@ -14,8 +14,11 @@ SET search_path TO hpms,public;
 SELECT has_materialized_view('hpms_count_data');
 SELECT has_index( 'hpms_count_data','hpms_count_data_geom_idx' );
 
-SELECT has_column(        'hpms_count_data', 'gid' );
-SELECT col_type_is(       'hpms_count_data', 'gid', 'integer' );
+SELECT has_column(        'hpms_count_data', 'segment_id' );
+SELECT col_type_is(       'hpms_count_data', 'segment_id', 'integer' );
+
+SELECT has_column(        'hpms_count_data', 'geom_id' );
+SELECT col_type_is(       'hpms_count_data', 'geom_id', 'integer' );
 
 SELECT has_column(        'hpms_count_data', 'year_record' );
 SELECT col_type_is(       'hpms_count_data', 'year_record', 'smallint' );

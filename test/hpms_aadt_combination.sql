@@ -14,9 +14,9 @@ SET search_path TO hpms,public;
 SELECT has_table('hpms_aadt_combination');
 SELECT has_pk( 'hpms_aadt_combination' );
 
-SELECT has_column(        'hpms_aadt_combination', 'gid' );
-SELECT col_type_is(       'hpms_aadt_combination', 'gid', 'integer' );
-SELECT col_hasnt_default( 'hpms_aadt_combination', 'gid' );
+SELECT has_column(        'hpms_aadt_combination', 'segment_id' );
+SELECT col_type_is(       'hpms_aadt_combination', 'segment_id', 'integer' );
+SELECT col_hasnt_default( 'hpms_aadt_combination', 'segment_id' );
 
 SELECT has_column(        'hpms_aadt_combination', 'year_record' );
 SELECT col_type_is(       'hpms_aadt_combination', 'year_record', 'smallint' );

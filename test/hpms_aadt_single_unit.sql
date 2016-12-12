@@ -14,9 +14,9 @@ SET search_path TO hpms,public;
 SELECT has_table('hpms_aadt_single_unit');
 SELECT has_pk( 'hpms_aadt_single_unit' );
 
-SELECT has_column(        'hpms_aadt_single_unit', 'gid' );
-SELECT col_type_is(       'hpms_aadt_single_unit', 'gid', 'integer' );
-SELECT col_hasnt_default( 'hpms_aadt_single_unit', 'gid' );
+SELECT has_column(        'hpms_aadt_single_unit', 'segment_id' );
+SELECT col_type_is(       'hpms_aadt_single_unit', 'segment_id', 'integer' );
+SELECT col_hasnt_default( 'hpms_aadt_single_unit', 'segment_id' );
 
 SELECT has_column(        'hpms_aadt_single_unit', 'year_record' );
 SELECT col_type_is(       'hpms_aadt_single_unit', 'year_record', 'smallint' );
