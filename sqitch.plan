@@ -10,3 +10,4 @@ hpms_count_data [hpms_aadt hpms_aadt_combination hpms_aadt_single_unit] 2016-12-
 @1.0.0 2016-12-17T16:19:54Z James E. Marca <james@activimetrics.com> # version 1.0.0
 hpms_aadt_single_unit [hpms_aadt_single_unit@1.0.0] 2016-12-17T16:32:53Z James E. Marca <james@activimetrics.com> # add year to primary key
 hpms_aadt_combination [hpms_aadt_combination@1.0.0] 2016-12-17T16:37:58Z James E. Marca <james@activimetrics.com> # add year to primary key for aadt_combination
+@1.0.1 2016-12-17T16:53:27Z James E. Marca <james@activimetrics.com> # primary keys for aadt-single, combo based on year too
