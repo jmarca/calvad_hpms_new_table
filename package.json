@@ -1,6 +1,6 @@
 {
   "name": "calvad_hpms_new_table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "sqitch code to deploy hpms new table",
   "main": "index.js",
   "directories": {
