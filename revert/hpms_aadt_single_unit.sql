@@ -3,6 +3,8 @@
 BEGIN;
 --
 SET search_path TO hpms,public;
-DROP TABLE hpms_aadt_single_unit;
+alter table hpms.hpms_aadt_single_unit drop constraint "hpms_aadt_single_unit_pkey";
+
+alter table hpms.hpms_aadt_single_unit add primary key (segment_id);
 
 COMMIT;
