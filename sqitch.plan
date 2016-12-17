@@ -8,3 +8,4 @@ hpms_aadt_combination [hpms_segments] 2016-12-08T23:48:40Z James E. Marca <james
 hpms_aadt_single_unit [hpms_segments] 2016-12-08T23:48:56Z James E. Marca <james@activimetrics.com> # hpms_aadt_single_unit table
 hpms_count_data [hpms_aadt hpms_aadt_combination hpms_aadt_single_unit] 2016-12-09T20:04:45Z James E. Marca <james@activimetrics.com> # view for count data
 @1.0.0 2016-12-17T16:19:54Z James E. Marca <james@activimetrics.com> # version 1.0.0
+hpms_aadt_single_unit [hpms_aadt_single_unit@1.0.0] 2016-12-17T16:32:53Z James E. Marca <james@activimetrics.com> # add year to primary key
