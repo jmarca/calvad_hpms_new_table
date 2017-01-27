@@ -34,6 +34,10 @@ SELECT has_column(        'hpms_segments_geom', 'section_length' );
 SELECT col_type_is(       'hpms_segments_geom', 'section_length', 'double precision' );
 SELECT col_hasnt_default( 'hpms_segments_geom', 'section_length' );
 
+SELECT has_column(        'hpms_segments_geom', 'orig_section_length' );
+SELECT col_type_is(       'hpms_segments_geom', 'orig_section_length', 'double precision' );
+SELECT col_hasnt_default( 'hpms_segments_geom', 'orig_section_length' );
+
 SELECT has_column(        'hpms_segments_geom', 'geom' );
 SELECT col_type_is(       'hpms_segments_geom', 'geom', 'geometry(MultiLineString,4326)' );
 SELECT col_hasnt_default( 'hpms_segments_geom', 'geom' );

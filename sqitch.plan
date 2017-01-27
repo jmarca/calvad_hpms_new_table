@@ -11,3 +11,4 @@ hpms_count_data [hpms_aadt hpms_aadt_combination hpms_aadt_single_unit] 2016-12-
 hpms_aadt_single_unit [hpms_aadt_single_unit@1.0.0] 2016-12-17T16:32:53Z James E. Marca <james@activimetrics.com> # add year to primary key
 hpms_aadt_combination [hpms_aadt_combination@1.0.0] 2016-12-17T16:37:58Z James E. Marca <james@activimetrics.com> # add year to primary key for aadt_combination
 @1.0.1 2016-12-17T16:53:27Z James E. Marca <james@activimetrics.com> # primary keys for aadt-single, combo based on year too
+hpms_segments [hpms_segments@1.0.1] 2017-01-27T20:44:11Z James E. Marca <james@activimetrics.com> # add original length column
